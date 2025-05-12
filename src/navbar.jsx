@@ -1,5 +1,5 @@
 import './App.css';
-import Logo from "./mylogo.svg";
+import Logo from "./assets/mylogo.svg";
 import React from 'react';
 import { MyButton } from './myButton';
 function Navbar() {
