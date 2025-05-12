@@ -1,0 +1,74 @@
+{
+    "Major":"Civil & Environmental Engineering",
+    "School":"MEAS",
+    "Site":"https://www.mccormick.northwestern.edu/civil-environmental/",
+    "Core": "ENG_CORE",
+    "CourseReqs":
+    [
+        {
+            "ReqsName":"Basic",
+            "Courses":
+            [
+                "CIV_ENV 201-0",
+                "CIV_ENV 202-0",
+                "CIV_ENV 220-0",
+                "CIV_ENV 216-0",
+                "CIV_ENV 304-0",
+                "CIV_ENV 306-0", 
+                "MECH_ENG 241-0"
+            ],
+            "Coreqs":
+            [
+                {
+                "CoreqsName":"Thermodynamics",
+                "CoreqsCourses":
+                [
+                    "MECH_ENG 222-0",
+                    "BMD_ENG 250-0",
+                    "CHEM_ENG 211-0"
+                ]
+                }
+            ]
+        },
+        {
+            "ReqsName":"Breadth",
+            "Courses":
+            [
+                "CIV_ENV 221-0",
+                "CIV_ENV 250-0",
+                "CIV_ENV 260-0"
+            ],
+            "Coreqs":
+            [
+                {
+                    "CoreqsName":"Transportation",
+                    "CoreqsCourses":
+                [
+                    "CIV_ENV 371-0",
+                    "CIV_ENV 376-0"
+                ]
+            }
+            ]
+        },
+        {
+            "ReqsName":"Focus",
+            "Courses":
+            ["4 courses from selected focus"],
+            "Coreqs":[]
+        },
+        {
+            "ReqsName":"Capstone",
+            "Courses":
+            [
+                "CIV_ENV 382-1",
+                "CIV_ENV 382-2"
+            ],
+            "Coreqs":[]
+        },
+        {
+            "ReqsName":"Technical",
+            "Courses":["5 300-level engineering and math courses"],
+            "Coreqs":[]
+        }
+    ]
+}

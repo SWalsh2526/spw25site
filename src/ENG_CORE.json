@@ -1,0 +1,34 @@
+{
+    "Math":
+    [
+        "MATH 220-1",
+        "MATH 220-2",
+        [
+            "MATH 228-1",
+            "ES_APPM 252-1"
+        ],
+        [
+            "MATH 228-2",
+            "ES_APPM 252-2"
+        ]
+    ],
+    "Geneng":
+    [
+        [
+            "GEN_ENG 205-1",
+            "GEN_ENG 206-1"
+        ],
+        [
+            "GEN_ENG 205-2",
+            "GEN_ENG 206-2"
+        ],
+        [
+            "GEN_ENG 205-3",
+            "GEN_ENG 206-3"
+        ],
+        [
+            "GEN_ENG 205-4",
+            "GEN_ENG 206-4"
+        ]
+    ]
+}
