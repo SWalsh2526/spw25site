@@ -1,11 +1,9 @@
-import './App.css';
-import { RegText } from './regText';
 import React, {useState, useEffect} from 'react';
-import {Button2 } from './Button2';
-import { MainDiv3 } from './MainDiv3';
-import { MainDiv } from './mainDiv';
-import { Background } from './background';
-import { GrpSelect } from './GrpSelect';
+import {Button2 } from '../elements/button2';
+import { MainDiv3 } from '../elements/mainDiv3';
+import { MainDiv } from '../elements/mainDiv';
+import { Background } from '../elements/background';
+import { GrpSelect } from '../elements/grpSelect';
  
 
 const MajorReqsTester = () => {
