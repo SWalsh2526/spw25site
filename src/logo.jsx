@@ -1,3 +1,3 @@
-import Logo from "/mylogo.svg";
+import Logo from "public/mylogo.svg";
 
 export default Logo
