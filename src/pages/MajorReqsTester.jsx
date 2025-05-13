@@ -4,7 +4,7 @@ import { MainDiv3 } from '../elements/mainDiv3';
 import { MainDiv } from '../elements/mainDiv';
 import { Background } from '../elements/background';
 import { GrpSelect } from '../elements/grpSelect';
- 
+import { Header } from '../elements/header';
 
 const MajorReqsTester = () => {
   const [data, setData] = useState(null);
@@ -23,7 +23,7 @@ const MajorReqsTester = () => {
       <Background>
         <main className="grid grid-cols-8 gap-4">
           <MainDiv>
-          <p>{data.Major}</p>
+          <Header>{data.Major}</Header>
           {data.CourseReqs.map(reqs => (
               <MainDiv3 key={reqs.ReqsName}>
                 <p className="basis-full">{reqs.ReqsName}</p>

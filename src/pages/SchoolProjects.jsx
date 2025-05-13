@@ -1,5 +1,6 @@
 import { MainDiv } from '../elements/mainDiv';
 import { Link } from 'react-router-dom';
+import MajorReqsTester from './MajorReqsTester';
 import { Header } from '../elements/header';
 
 function SchoolProjects() {
