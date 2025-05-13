@@ -8,6 +8,7 @@ import WorkProjects from './pages/WorkProjects.jsx';
 import SchoolProjects from './pages/SchoolProjects.jsx';
 import FunProjects from './pages/FunProjects.jsx';
 import { Background } from './elements/background.jsx';
+import { Analytics } from "@vercel/analytics/react"
 import './App.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
           <Route path="/MajorReqsTester" element={<MajorReqsTester />} />
           <Route path="/FunProjects" element={<FunProjects />} />
         </Routes> 
+        <Analytics/>
       </Background>
     </BrowserRouter>
   </StrictMode>,
