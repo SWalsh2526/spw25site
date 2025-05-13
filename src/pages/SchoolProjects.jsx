@@ -10,7 +10,7 @@ function SchoolProjects() {
             <Header>
                 DTC Work
             </Header>
-            <Link to="/SchoolProjects/MajorReqsTester">Major Requirements tester</Link> which I hope to eventually integrate into paper.nu.
+            <Link to="/MajorReqsTester">Major Requirements tester</Link> which I hope to eventually integrate into paper.nu.
           </MainDiv>
         </main>
     );

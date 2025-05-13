@@ -21,7 +21,7 @@ root.render(
           <Route path="/" element={<Homepage />} />
           <Route path="/WorkProjects" element={<WorkProjects />} />
           <Route path="/SchoolProjects" element={<SchoolProjects />} />
-            <Route path="/MajorReqsTester" element={<MajorReqsTester />} />
+          <Route path="/MajorReqsTester" element={<MajorReqsTester />} />
           <Route path="/FunProjects" element={<FunProjects />} />
         </Routes> 
       </Background>
