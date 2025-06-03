@@ -5,44 +5,41 @@ import { MainDiv } from '../elements/mainDiv';
 import { Background } from '../elements/background';
 import { GrpSelect } from '../elements/grpSelect';
 import { Header } from '../elements/header';
+import { Database } from '@sqlitecloud/drivers';
 
 const MajorReqsTester = () => {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch('/CIV_ENV.json')
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.error('Error fetching data:', error));
-  }, []);
-
+  const [data, setData] = useState([]);
+  const getCourses = async () => {
+    let db = null;
+    try {
+      db = new Database('sqlitecloud://cx0rr9ufhk.g3.sqlite.cloud:8860?apikey=azJOjZgbnrta8hEq5Xo0F2SwxPCrGFJyZaLmbJ7W9wQ')
+      const result = await db.sql(`
+        USE DATABASE NUcourses.db;
+        SELECT * FROM NU_COURSES LIMIT 20;
+        `);
+      setData(result);
+    } catch (err) {
+      console.error('getCourses error - ${err}', err);
+    } finally {
+      db?.close();
+    }
+  };
+useEffect(() => {
+  getCourses();
+}, []);
   if (!data) {
-    return <div>Loading...</div>;
+    return(
+      <Background>
+        <div>Loading...</div>
+      </Background>
+    ); 
   }
     return (
       <Background>
         <main className="grid grid-cols-8 gap-4">
-          <MainDiv>
-          <Header>{data.Major}</Header>
-          {data.CourseReqs.map(reqs => (
-              <MainDiv3 key={reqs.ReqsName}>
-                <p className="basis-full">{reqs.ReqsName}</p>
-                {reqs.Courses.map(course => (
-                  <Button2 key={course}>{course}</Button2>
-                ))}
-                {reqs.Coreqs.map(coreqs => (
-                  <form key={coreqs.CoreqsName}>
-                    <label className="text-lg">{coreqs.CoreqsName}</label>
-                    <GrpSelect>
-                    {coreqs.CoreqsCourses.map(coreqscourse =>
-                      <option>{coreqscourse}</option>
-                    )}
-                    </GrpSelect>
-                  </form>
-                ))}
-              </MainDiv3>
+          {data.map((course) => (
+            <MainDiv key={course.id}>{course.department} and {course.number}</MainDiv>
           ))}
-          </MainDiv>
         </main>
       </Background>
     );

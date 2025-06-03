@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sqlitecloud/drivers": "^1.0.507",
     "@tailwindcss/vite": "^4.1.4",
     "@vercel/analytics": "^1.5.0",
     "axios": "^1.9.0",

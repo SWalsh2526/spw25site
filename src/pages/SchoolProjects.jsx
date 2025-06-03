@@ -11,6 +11,7 @@ function SchoolProjects() {
                 DTC Work
             </Header>
             <Link to="/MajorReqsTester">Major Requirements tester</Link> which I hope to eventually integrate into paper.nu.
+            <Link to="/NewCAESARExample">A page</Link> from a new CAESAR design our team made.
           </MainDiv>
         </main>
     );
