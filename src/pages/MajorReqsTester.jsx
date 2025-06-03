@@ -38,7 +38,11 @@ useEffect(() => {
       <Background>
         <main className="grid grid-cols-8 gap-4">
           {data.map((course) => (
-            <MainDiv key={course.cid}>{course.Department} and {course.Number}</MainDiv>
+            <MainDiv key={course.cid}>
+              <strong>{course.Department} {course.Number}</strong>
+              <br></br>
+              {course.Description}
+              </MainDiv>
           ))}
         </main>
       </Background>
